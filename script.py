@@ -46,6 +46,7 @@ X_test[:, 1] = labelencoder_X_2.transform(X_test[:,1])
 X= X[0:lengthX,:]                   # getting original training set
 y = y[X[:,0].argsort()]             # to arrange data in ascending order of label encoding
 X = X[X[:,0].argsort()]
+X_sub = X_sub[X_test[:,0].argsort()]
 X_test = X_test[X_test[:,0].argsort()]
 
 
